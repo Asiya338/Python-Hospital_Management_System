@@ -4,7 +4,6 @@ from tkcalendar import DateEntry
 from tkinter import messagebox
 import mysql.connector 
 
-
 window = Tk() #root
 window.title('Hospital management system')
 window.geometry('1258x950+0+0') #width, height, coloum & row position = 0

@@ -1,0 +1,45 @@
+### Project Overview
+Title: Hospital Management System
+
+This project aims to create a comprehensive Hospital Management System using Python, with a graphical user interface (GUI) built using Tkinter. The system will facilitate the management of patient prescriptions and related data, ensuring efficient operations within a hospital environment.
+
+Components of the Project
+GUI Layout:
+
+The interface is divided into multiple frames for better organization and usability.
+a. Left Frame:
+Input Fields: This frame includes text fields for users to input patient data, prescription details, and other relevant information.
+Patient Name: Text input for entering the patient’s name.
+Patient ID: Numeric input for a unique patient identifier.
+Medicine Name: Text input for specifying the medication prescribed.
+Dosage: Text input for indicating the dosage (e.g., "500mg").
+Duration: Input for the duration of the prescription (e.g., "5 days").
+b. Right Frame:
+Prescription Data Display: This section shows the details of prescriptions entered, allowing users to review and verify the data.
+Labels or Text Areas: Use labels or text areas to display the entered prescription details in a clear format.
+Button Functionality:
+
+Below the input fields, there are several buttons that perform specific actions:
+Prescription: This button processes the input data and generates a prescription.
+Prescription Data: Displays or retrieves previously entered prescriptions from the database.
+Delete: Allows users to remove specific entries from the database.
+Update: Facilitates updating existing prescription details based on user input.
+Clear: Resets all input fields and the displayed data to their initial states.
+Exit: Closes the application.
+Data Representation:
+
+Tabular Representation: Below the button section, a table (using ttk.Treeview from Tkinter) displays all entered prescription data. This provides an overview of all records and enhances user interaction.
+Database Connectivity:
+
+MySQL Database: The application connects to a MySQL database to store and retrieve patient and prescription data.
+Database Operations:
+Insert: Adding new prescriptions into the database.
+Select: Fetching existing prescriptions for display.
+Update: Modifying existing records based on user inputs.
+Delete: Removing records from the database.
+Libraries and Modules Used
+Tkinter: The primary library for creating the GUI. It provides tools to create windows, frames, buttons, labels, and more.
+
+tkcalendar: This module can be used if you want to incorporate a calendar for selecting dates, such as prescription duration or appointment dates.
+
+MySQL Connector: A library that allows Python to connect to a MySQL database, enabling the execution of SQL queries for CRUD (Create, Read, Update, Delete) operations.
