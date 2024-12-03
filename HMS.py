@@ -111,7 +111,7 @@ def prescription():
         messagebox.showerror('Error', 'Fields cannot be empty')
     else:
         con = mysql.connector.connect(
-            host="localhost", username="root", password="asiyacse504@", database="pythondata")
+            host="localhost", username="root", password="your_password", database="python_database")
         myCurser = con.cursor()
         myCurser.execute("insert into patientdata values (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)", (
             NamesofTablet.get(),
@@ -132,7 +132,7 @@ def prescription():
 
 def fetchData():
     con=mysql.connector.connect(
-    host="localhost", username="root", password="asiyacse504@", database="pythondata")
+    host="localhost", username="root", password="your_password", database="python_database")
     cursor = con.cursor()
 
     cursor.execute("SELECT * FROM patientdata")
@@ -160,7 +160,7 @@ def getCursor(event):
     ExpDate.set([9])
     
 def update():
-    con = mysql.connector.connect(host="localhost", username="root", password="asiyacse504@", database="pythondata")
+    con = mysql.connector.connect(host="localhost", username="root", password="your_password", database="python_database")
     myCurser = con.cursor()
     sqlUpdate = ("update patientdata set NamesofTablet=%s, IssueDate=%s, Dose=%s, Tablets=%s ,bloodPressure=%s, patientname=%s,  DOB1=%s, Address1=%s,  ExpDate=%s where patientId = %s")
     val = (
@@ -197,7 +197,7 @@ def prescriptionDetails():
 
 def delete():
     con = mysql.connector.connect(
-    host="localhost", username="root", password="asiyacse504@", database="pythondata")
+    host="localhost", username="root", password="your_password", database="python_database")
     myCursor = con.cursor()
 
     myCursor.execute("truncate table patientdata")
