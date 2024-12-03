@@ -4,6 +4,8 @@
 
 The Hospital Management System is a Python-based application designed to facilitate the management of patient prescriptions and related data within a hospital. It features a user-friendly graphical interface built with Tkinter, allowing healthcare providers to easily enter, update, and manage prescription information.
 
+[![Screenshot-116.png](https://i.postimg.cc/y6MmqTS1/Screenshot-116.png)](https://postimg.cc/PNMpYY49)
+
 ## Features
 
 - **Input Fields**: Capture patient details and prescription data.
@@ -14,7 +16,7 @@ The Hospital Management System is a Python-based application designed to facilit
 ## Technologies Used
 
 - **Python**: Programming language used for backend logic.
-- **Tkinter**: Library for creating the graphical user interface.
+- **Tkinter**: Library for creating the graphical user interface (GUI).
 - **MySQL**: Database for storing patient and prescription information.
 - **tkcalendar**: Optional module for date selection (if implemented).
 
